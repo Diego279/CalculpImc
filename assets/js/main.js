@@ -9,8 +9,7 @@ const inputAltura = e.target.querySelector('#altura');
 const peso = Number(inputPeso.value); /* convertendo os inputs para number */
 const altura = Number(inputAltura.value); /* convertendo os inputs para number */
 
-if (!peso) { /* !peso: Diferente de Number faça
-caso retorner peso invalodo ira retoranar Peso Invalido */
+if (!peso) { 
   setResultado ('Peso invalido', false);
   return;
 }  
