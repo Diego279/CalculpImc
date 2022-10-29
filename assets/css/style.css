@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+ --primary-color:rgb(17, 86, 102);
+ --primary-color-darker:rgb(4, 22, 26);
+}
+
+* {
+    box-sizing: border-box; /*informa ao navegador para considerar qualquer borda e preenchimento*/
+    outline: 0;/* é uma propriedade abreviada para configurar uma ou mais das propriedades de contorno */
+    }
+
+    body{/*todo conteudo da pagina*/
+        margin: 0;/*margem é o espaço ao redor da borda de um elemento*/
+        padding: 0;/*preenchimento é o espaço entre a borda de um elemento e o conteúdo do elemento */
+        background: var(--primary-color);
+        font-family: 'Open sans', sans-serif;
+        font-size: 1.3em;
+        line-height: 1.5em;
+
+    }
+
+    .container {/*somente esta sendo estelilizado a section class="container"*/
+        max-width: 640px;
+        margin: 50px auto;/*nesse caso estou colocando 20px em topoe embaixo e as laterais estão em automatico*/
+        background: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+form input, form label, form button {
+display: block;/*comportamento do elemento dentro do form*/
+width: 100%; 
+margin-bottom: 10px;
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0 20px;
+}
+
+form input:focus{
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight:700px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+form button:hover {
+    background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado {
+background: rgb(109, 255, 182);
+padding: 10px 20px;
+
+}
+
+.bad {
+    background: rgb(210, 12, 12);
+ }
